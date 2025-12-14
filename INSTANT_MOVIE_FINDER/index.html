@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instant Movie Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎬 Instant Movie Finder</h1>
+
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search movies or describe your mood"
+    >
+    <button onclick="searchMovies()">Search</button>
+  </div>
+
+  <h2 id="recTitle">✨ Recommended for You</h2>
+  <div id="recommendedMovies" class="movie-list"></div>
+
+  <h2 id="resultTitle" style="display:none;">Search Results</h2>
+  <div id="movieList" class="movie-list"></div>
+
+  <h2 id="similarTitle" style="display:none;">Similar Movies</h2>
+  <div id="similarMovies" class="movie-list"></div>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
